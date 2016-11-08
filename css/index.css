@@ -1,0 +1,501 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box;
+  position: relative;
+}
+
+img {
+  border: none;
+}
+
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 50.66667px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1478245415111");
+  /* IE9*/
+  src: url("iconfont.eot?t=1478245415111#iefix") format("embedded-opentype"), url("iconfont.woff?t=1478245415111") format("woff"), url("iconfont.ttf?t=1478245415111") format("truetype"), url("iconfont.svg?t=1478245415111#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+.icon {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #eaeaea;
+  overflow: hidden;
+}
+
+.shang {
+  width: 100%;
+  height: 6.7rem;
+}
+
+.chang {
+  width: 5.6rem;
+  height: 5.6rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../img/changxia.png);
+  background-size: contain;
+}
+
+.chang .img-1 {
+  width: 5.2rem;
+  height: 5.2rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.chang .center {
+  width: 2.3rem;
+  height: 2.3rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.head {
+  width: 100%;
+  height: 2.1rem;
+  background: #3c3d45;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.head #progress {
+  height: 0.1rem;
+  width: 4.8rem;
+  border-radius: 0.3rem;
+  background: #08080a;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  bottom: 0.4rem;
+}
+
+.head #progress #p-i {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -0.15rem;
+  top: -0.1rem;
+  background: #fff;
+}
+
+.head #progress #jin {
+  height: 0.1rem;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0.3rem;
+}
+
+.head #jinxing, .head #duration {
+  color: #fff;
+  font-size: 0.4rem;
+}
+
+.head #jinxing {
+  position: absolute;
+  left: 0.25rem;
+  bottom: 0.25rem;
+}
+
+.head #duration {
+  position: absolute;
+  right: 0.25rem;
+  bottom: 0.25rem;
+}
+
+.head #ming {
+  font-size: .5rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: .4rem;
+}
+
+.cexia {
+  height: 0.8rem;
+  width: 0.8rem;
+  position: absolute;
+  bottom: 1.1rem;
+  right: 0.2rem;
+  background-image: url(../img/cexia.png);
+  background-size: contain;
+}
+
+.zhen {
+  position: absolute;
+  bottom: 1.1rem;
+  right: 0.1rem;
+}
+
+.zhen img {
+  width: 4rem;
+  height: 0.6rem;
+}
+
+.xia {
+  width: 100%;
+  height: 6.6rem;
+}
+
+.xia p {
+  text-align: center;
+  color: #595a5c;
+  font-size: 0.4rem;
+}
+
+.xia p:nth-of-type(2) {
+  font-size: 0.6rem;
+  color: #414448;
+}
+
+.xia .anniu {
+  height: 1.7rem;
+  width: 4rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  margin-top: 0.5rem;
+  background-image: url(../img/anniu.png);
+  background-size: contain;
+}
+
+.xia .anniu #play {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 1.45rem;
+  top: .28rem;
+  font-size: .6rem;
+  text-align: center;
+  padding-top: .25rem;
+  padding-left: .1rem;
+  color: #d5d5d6;
+}
+
+.xia .anniu #next {
+  width: 0.8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: absolute;
+  right: .24rem;
+  top: .45rem;
+  font-size: .4rem;
+  padding-left: .25rem;
+  line-height: .85rem;
+  color: #d5d5d6;
+}
+
+.xia .anniu #prev {
+  left: .2rem;
+  top: .45rem;
+  width: 0.8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: absolute;
+  font-size: .4rem;
+  padding-left: .2rem;
+  line-height: .85rem;
+  color: #d5d5d6;
+}
+
+.xia #volume {
+  height: 0.1rem;
+  width: 4.8rem;
+  border-radius: 0.3rem;
+  background: #777777;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  bottom: 1.8rem;
+}
+
+.xia #volume #v-i {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  position: absolute;
+  right: -0.15rem;
+  top: -0.1rem;
+  background: #fff;
+}
+
+.xia #volume #yin {
+  height: 0.11rem;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0.3rem;
+}
+
+.xia .small, .xia .big {
+  color: #757575;
+  font-size: 0.4rem;
+  position: absolute;
+  bottom: 1.6rem;
+}
+
+.xia .small {
+  left: .6rem;
+}
+
+.xia .big {
+  right: .6rem;
+}
+
+.foot {
+  width: 100%;
+  height: 1.2rem;
+  background: #2b2d32;
+  position: absolute;
+  bottom: 0;
+}
+
+.foot ul {
+  width: 90%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.foot ul li {
+  width: 20%;
+  height: 100%;
+  float: left;
+  color: #aaa;
+  font-size: .2rem;
+  text-align: center;
+}
+
+.foot ul li .logos {
+  width: .6rem;
+  height: .6rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: .1rem;
+  background-size: contain;
+}
+
+.foot ul li div:nth-of-type(2) {
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  bottom: .15rem;
+}
+
+.foot ul li:nth-of-type(1) .logos {
+  width: .75rem;
+  height: .75rem;
+  top: .05rem;
+  background-image: url(../img/songs.png);
+}
+
+.foot ul li:nth-of-type(2) .logos {
+  background-image: url(../img/albums.png);
+}
+
+.foot ul li:nth-of-type(3) .logos {
+  background-image: url(../img/plauing.png);
+}
+
+.foot ul li:nth-of-type(4) .logos {
+  background-image: url(../img/artists.png);
+}
+
+.foot ul li:nth-of-type(5) .logos {
+  background-image: url(../img/settings.png);
+}
+
+#songs {
+  width: 80%;
+  height: 60.5%;
+  padding-top: 10%;
+  position: absolute;
+  left: 0;
+  bottom: 1.2rem;
+  background: #3c3d45;
+  overflow: hidden;
+}
+
+#songs li {
+  width: 100%;
+  height: 10%;
+  color: #fff;
+  padding-left: .5rem;
+}
+
+#songs li span:nth-of-type(2) {
+  padding-left: .4rem;
+}
+
+#songs li span:nth-of-type(3) {
+  float: right;
+  padding-right: .5rem;
+}
+
+#songs .active {
+  color: #d07b42;
+}
+
+.one {
+  display: none;
+}
+
+.ac {
+  display: block;
+}
+
+@keyframes pian {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.move {
+  animation: pian 5s 0s infinite;
+}
+
+@keyframes cizhen {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+.cz {
+  animation: cizhen 1s 0s infinite;
+}

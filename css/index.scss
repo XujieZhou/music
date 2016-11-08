@@ -1,0 +1,351 @@
+@import 'base.scss';
+
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1478245415111'); /* IE9*/
+  src: url('iconfont.eot?t=1478245415111#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1478245415111') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1478245415111') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1478245415111#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+//唱片
+.shang{
+    width: 100%;
+    height: 6.7rem;
+}
+.chang{
+    width: 5.6rem;
+    height: 5.6rem;
+    @include center;
+    background-image: url(../img/changxia.png);
+    background-size: contain;
+    .img-1{
+        width: 5.2rem;
+        height: 5.2rem;
+        @include center;
+    }
+    .center{
+        width: 2.3rem;
+        height: 2.3rem;
+        @include center;
+        border-radius: 50%;
+    }
+}
+.head{
+    width: 100%;
+    height: 2.1rem;
+    background: #3c3d45;
+    opacity: 0.9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    #progress{
+        height: 0.1rem;
+        width: 4.8rem;
+        border-radius: 0.3rem;
+        background: #08080a;
+        @include left-right;
+        bottom: 0.4rem;
+        #p-i{
+            width: 0.3rem;
+            height: 0.3rem;
+            border-radius: 50%;
+            position: absolute;
+            left: -0.15rem;
+            top: -0.1rem;
+            background: #fff;
+        }
+        #jin{
+            height: 0.1rem;
+            width: 0;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 0.3rem;
+        }
+    }
+    #jinxing,#duration{
+        color: #fff;
+        font-size: 0.4rem;
+    }
+    #jinxing{
+        position: absolute;
+        left: 0.25rem;
+        bottom: 0.25rem;
+    }
+    #duration{
+        position: absolute;
+        right: 0.25rem;
+        bottom: 0.25rem;
+    }
+    #ming{
+        font-size: .5rem;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+        @include left-right;
+        top: .4rem;
+    }
+    
+}
+.cexia{
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    bottom: 1.1rem;
+    right: 0.2rem;
+    background-image: url(../img/cexia.png);
+    background-size: contain;
+}
+.zhen{
+    position: absolute;
+    bottom: 1.1rem;
+    right: 0.1rem;
+    img{
+        width: 4rem;
+        height: 0.6rem;
+    }
+}
+
+//中间
+.xia{
+    width: 100%;
+    height: 6.6rem;
+    p{
+        text-align: center;
+        color: #595a5c;
+        font-size: 0.4rem;
+    }
+    p:nth-of-type(2){
+        font-size: 0.6rem;
+        color: #414448;
+    }
+    .anniu{
+        height: 1.7rem;
+        width: 4rem;
+        @include left-right;
+        margin-top: 0.5rem;
+        background-image: url(../img/anniu.png);
+        background-size: contain;
+        #play{
+            width: 1.1rem;
+            height:1.1rem;
+            border-radius: 50%;
+            position: absolute;
+            left: 1.45rem;
+            top: .28rem;
+            font-size: .6rem;
+            text-align: center;
+            padding-top: .25rem;
+            padding-left: .1rem;
+            color: #d5d5d6;
+        }
+        #next{
+            width: 0.8rem;
+            height:.8rem;
+            border-radius: 50%;
+            position: absolute;
+            right: .24rem;
+            top: .45rem;
+            font-size: .4rem;
+            padding-left: .25rem;
+            line-height: .85rem;
+            color: #d5d5d6;
+        }
+        #prev{
+            left: .2rem;
+            top: .45rem;
+            width: 0.8rem;
+            height:.8rem;
+            border-radius: 50%;
+            position: absolute;
+            font-size: .4rem;
+            padding-left: .2rem;
+            line-height: .85rem;
+            color: #d5d5d6;
+        }
+    }
+    #volume{
+        height: 0.1rem;
+        width: 4.8rem;
+        border-radius: 0.3rem;
+        background: #777777;
+        @include left-right;
+        bottom: 1.8rem;
+        #v-i{
+            width: 0.3rem;
+            height: 0.3rem;
+            border-radius: 50%;
+            position: absolute;
+            right: -0.15rem;
+            top: -0.1rem;
+            background: #fff;
+        }
+        #yin{
+            height: 0.11rem;
+            width: 100%;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 0.3rem;
+        }
+    }
+    .small,.big{
+        color: #757575;
+        font-size: 0.4rem;
+        position: absolute;
+        bottom: 1.6rem;
+    }
+    .small{
+        left: .6rem;
+    }
+    .big{
+        right: .6rem;
+    }
+}
+
+
+
+//底部
+.foot{
+    width: 100%;
+    height: 1.2rem;
+    background: #2b2d32;
+    position: absolute;
+    bottom: 0;
+    ul{
+        width: 90%;
+        height: 100%;
+        @include left-right;
+        li{
+            width: 20%;
+            height: 100%;
+            float: left;
+            color: #aaa;
+            font-size: .2rem;
+            text-align: center;
+            .logos{
+                width: .6rem;
+                height: .6rem;
+                @include left-right;
+                top: .1rem;
+                background-size: contain;
+            }
+            div:nth-of-type(2){
+                @include left-right;
+                bottom: .15rem;
+            } 
+          } 
+          li:nth-of-type(1){
+            .logos{
+                width: .75rem;
+                height: .75rem;
+                top: .05rem;
+                background-image: url(../img/songs.png);
+            }
+          }
+          li:nth-of-type(2){
+            .logos{
+                background-image: url(../img/albums.png);
+            }
+          }
+          li:nth-of-type(3){
+            .logos{
+                background-image: url(../img/plauing.png);
+            }
+          }
+          li:nth-of-type(4){
+            .logos{
+                background-image: url(../img/artists.png); 
+            }
+          }
+          li:nth-of-type(5){
+            .logos{
+                background-image: url(../img/settings.png); 
+            }
+          }
+            
+    }
+    
+}
+
+
+//列表页
+#songs{
+    width: 80%;
+    height: 60.5%;
+    padding-top: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 1.2rem;
+    background: #3c3d45;
+    overflow: hidden;
+
+    
+    li{
+        width: 100%;
+        height: 10%;
+        color: #fff;
+        padding-left: .5rem;
+        span:nth-of-type(2){
+            padding-left: .4rem;
+        }
+        span:nth-of-type(3){
+            float: right;
+            padding-right: .5rem;
+        }
+    }
+    .active {
+        color: #d07b42;
+    }
+}
+.one{
+    display: none;
+    
+}
+.ac{
+    display: block;
+}
+
+@keyframes pian{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.move{
+    animation: pian 5s 0s infinite;
+}
+@keyframes cizhen{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(40deg);
+    }
+}
+.cz{
+    animation: cizhen 1s 0s infinite;
+}

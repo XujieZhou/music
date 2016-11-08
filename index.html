@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		
+		
+		<!-- Add to homescreen for Safari on Ios -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="music">
+		<link rel="apple-touch-icon" href="logo.jpg">
+		
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="music">
+		<meta name="theme-color" content="#2F3BA2">
+		<link rel="icon" sizes="192x192" href="logo.jpg">
+		
+		<title>music</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body>
+		<audio id="audio" src="胡夏 - 等一生.mp3" ></audio>
+		<!--唱片-->
+		<div class="shang">
+			<div class="chang">
+				<img src="./img/changpian.png" alt="" class="img-1" id="img-1"/>
+				<div class="center"></div>
+			</div>
+			<div class="head">
+				<h2 id="ming">等你一生</h2>
+				<div id="progress">
+					<div id="p-i"></div>
+					<div id="jin"></div>
+				</div>
+				<div id="jinxing">0:00</div>
+				<div id="duration">3:00</div>
+			</div>
+			<div class="cexia"></div>
+			<div class="zhen">
+				<img src="./img/tiao.png" alt="" />
+			</div>
+		</div>
+		<!--中间-->
+		<div class="xia">
+			<p>Paranoid Android</p>
+			<p id="geshou">胡夏</p>
+			<p>OK Computer</p>
+			<div class="anniu">
+				<div id="prev" class="icon">&#xe601;</div>
+				<div id="play" class="icon">&#xe646;</div>
+				<div id="next" class="icon">&#xe602;</div>
+			</div>
+			<div id="volume">
+				<div id="v-i"></div>
+				<div id="yin"></div>
+			</div>
+			<div class="big icon">&#xe68f;</div>
+			<div class="small icon" id="small">&#xe6ab;</div>
+			<div class="foot">
+				<ul>
+					<li class="songs">
+						<div class="logos"></div>
+						<div>songs</div>
+					</li>
+					<li class="albums">
+						<div class="logos"></div>
+						<div>albums</div>
+					</li>
+					<li class="Plauing">
+						<div class="logos"></div>
+						<div>Plauing</div>
+					</li>
+					<li class="Artists">
+						<div class="logos"></div>
+						<div>Artists</div>
+					</li>
+					<li class="Settings">
+						<div class="logos"></div>
+						<div>Settings</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--列表页-->
+		<ul id="songs" class="one">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ul>
+	</body>
+</html>

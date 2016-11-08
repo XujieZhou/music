@@ -1,0 +1,64 @@
+body,h1,h2,h3,h4,h5,h6,p,pre,ol,ul,li,form,input,textarea,dl,dt,dd,span
+   {margin:0;
+   padding:0;
+   }
+ ul,ol{
+     list-style:none;
+ }
+a{
+  text-decoration:none;
+}
+body{
+  background:#fff;
+}
+*{
+  font-family:"Microsoft YaHei",sans-serif;
+  box-sizing:border-box;
+  position:relative;
+}
+img{
+border:none;
+}
+/*上下居中*/
+@mixin  top-bottom{
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+
+/*左右居中*/
+@mixin left-right{
+    left:0;
+    right:0;
+    margin:auto;
+    position:absolute;
+}
+
+/*居中*/
+@mixin center{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+
+
+$d-list:320px,360px,375px,380px,384px,412px,414px,600px,768px,800px;
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+}
+$design-size:750px;
+@each $w in $d-list{
+    @media screen and (min-width:#{$w}) {
+        html{
+            font-size:100px*$w/$design-size;
+        }
+    }
+}
