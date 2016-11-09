@@ -14,28 +14,45 @@ $(function(){
 	var musics = [{
 			name: "等你一生",
 			autor: '胡夏',
-			img:"./img/huxia.jpg",
-			src: "胡夏 - 等一生.mp3"
+			img:"../img/huxia.jpg",
+			src: "胡夏 - 等一生.mp3",
+			qu:"作曲:木村充利",
+			ci:"作词:九把刀"
 		}, {
 			name: "夜莺",
 			autor: '雅尼',
-			src: "雅尼 - 夜莺.mp3"
+			img:"../img/huxia.jpg",
+			src: "雅尼 - 夜莺.mp3",
+			qu:"作曲:雅尼",
+			ci:"作词:佚名"
 		}, {
 			name: "给我一个吻",
 			autor: '鹿晗  、杨子珊',
-			src: "鹿晗、杨子姗 - 给我一个吻.mp3"
+			img:"../img/huxia.jpg",
+			src: "鹿晗、杨子姗 - 给我一个吻.mp3",
+			qu:"作曲:杜学山",
+			ci:"作词:杜学山"
 		}, {
 			name: "我们的明天",
 			autor: '杨子珊',
-			src: "杨子姗 - 我们的明天.mp3"
+			img:"../img/huxia.jpg",
+			src: "杨子姗 - 我们的明天.mp3",
+			qu:"作曲:于京乐团",
+			ci:"作词:于京乐团"
 		}, {
 			name: "广岛之恋",
 			autor: '莫文蔚、齐秦',
-			src: "莫文蔚、齐秦 - 广岛之恋.mp3"
+			img:"../img/huxia.jpg",
+			src: "莫文蔚、齐秦 - 广岛之恋.mp3",
+			qu:"作曲:张洪量",
+			ci:"作词:张洪量"
 		}, {
 			name: "爱的勇气",
 			autor: '曲婉婷 ',
-			src: "曲婉婷 - 爱的勇气 - 电视剧 离婚律师 主题曲.mp3"
+			img:"../img/huxia.jpg",
+			src: "曲婉婷 - 爱的勇气 - 电视剧 离婚律师 主题曲.mp3",
+			qu:"作曲:曲婉婷",
+			ci:"作词:姚谦 "
 		},
 
 	];
@@ -60,6 +77,9 @@ $(function(){
 		play.html("&#xe672;");
 		$('#ming').html(musics[cindex].name);
 		$('#geshou').html(musics[cindex].autor);
+		$('#qu').html(musics[cindex].qu);
+		$('#ci').html(musics[cindex].ci);
+//		$('.center').css("background-image","url(musics[cindex].img)");
 	})
 	
 	
@@ -77,7 +97,9 @@ $(function(){
 		audio.play();
 		$('#ming').html(musics[cindex].name);
 		$('#geshou').html(musics[cindex].autor);
-		$('.center').css("background-image","url(musics[cindex].img)");
+		$('#qu').html(musics[cindex].qu);
+		$('#ci').html(musics[cindex].ci);
+//		$('.center').css("background-image","url(musics[cindex].img)");
 	})
 	
 	
@@ -94,6 +116,9 @@ $(function(){
 		audio.play();
 		$('#ming').html(musics[cindex].name);
 		$('#geshou').html(musics[cindex].autor);
+		$('#qu').html(musics[cindex].qu);
+		$('#ci').html(musics[cindex].ci);
+//		$('.center').css("background-image","url(musics[cindex].img)");
 	})
 	
 	
