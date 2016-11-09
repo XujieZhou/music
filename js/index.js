@@ -14,6 +14,7 @@ $(function(){
 	var musics = [{
 			name: "等你一生",
 			autor: '胡夏',
+			img:"./img/huxia.jpg",
 			src: "胡夏 - 等一生.mp3"
 		}, {
 			name: "夜莺",
@@ -26,9 +27,16 @@ $(function(){
 		}, {
 			name: "我们的明天",
 			autor: '杨子珊',
-			
 			src: "杨子姗 - 我们的明天.mp3"
-		}
+		}, {
+			name: "广岛之恋",
+			autor: '莫文蔚、齐秦',
+			src: "莫文蔚、齐秦 - 广岛之恋.mp3"
+		}, {
+			name: "爱的勇气",
+			autor: '曲婉婷 ',
+			src: "曲婉婷 - 爱的勇气 - 电视剧 离婚律师 主题曲.mp3"
+		},
 
 	];
 	
@@ -40,6 +48,7 @@ $(function(){
 			var n = (i === cindex) ? 'active' : '';
 			$('<li class="' + n + '"><span>' + v.name + '</span> <span>' + v.autor + '</span><span class="delete">×</span></li>').appendTo('#songs');
 		})
+//		$('<div class="add">＋</div><div class="qk">清空</div>').appendTo('#songs');
 	}
 	render();
 	$('#songs').on('touchend', "li", function() {
@@ -67,9 +76,8 @@ $(function(){
 		audio.src = musics[cindex].src;
 		audio.play();
 		$('#ming').html(musics[cindex].name);
-		
 		$('#geshou').html(musics[cindex].autor);
-		console.log($('#geshou'))
+		$('.center').css("background-image","url(musics[cindex].img)");
 	})
 	
 	
@@ -89,13 +97,51 @@ $(function(){
 	})
 	
 	
-	//删除
+	//列表删除 
+	$('#songs').on("touchend",".delete",function(){
+		var aa=$(this).closest("li");
+		var index=aa.index();
+		musics.splice(index,1);
+		if(index==cindex){
+			if(musics[cindex]){
+				audio.src = musics[cindex].src;
+			}
+			else{
+				audio.src="";
+				if(cindex==musics.length-1){
+					cindex=0;
+				}
+				cindex=0;
+				musics[cindex].src
+			}
+		}
+		else if(index>cindex){
+				
+			}
+		else if(index<cindex){
+			cindex-=1;
+		}
+		render();
+		return false;
+	})
+	
+	
+	//新增歌曲
+	$(".add").on("touchend",function(){
+		var a=$(this).attr("data-v");
+		musics.push(JSON.parse(a));
+		render();
+	})
+	render();
+	//清空列表
+	$(".qk").on("touchend",function(){
+		musics=[]
+		localStorage.musics=JSON.stringify(musics)
+		render();
+		return false;
+	})
 
-	
-	
-	
-	
-	
+
 	
 	var $audio=$("#audio");
 	var audio=$("#audio").get(0);
@@ -114,13 +160,15 @@ $(function(){
 	
 	
 	//	播放
-	play.on("click",function(){
+	play.on("touchend",function(){
 		if(audio.paused){
 			audio.play();
 			$(this).html("&#xe672;");
+			$(".img-1").addClass("move");
 		}else{
 			audio.pause();
 			$(this).html("&#xe646;");
+			$(".img-1").removeClass("move")
 		}
 	})
 	
@@ -242,7 +290,7 @@ $(function(){
 	
 	//选项卡
 	$(".songs").on("touchstart",function(){
-		$("#songs").toggleClass("ac");
+		$(".song-list").toggleClass("ac");
 	})
 	
 	
